@@ -12,7 +12,7 @@ header {
     font-size: 20px;
     border-style: solid;
     border-width: 2px; /* Thinner outline */
-    border-color: #ffc107; /* Blue glowy outline */
+    border-color: #ffc107; /* Yellowy glowy outline */
     box-shadow: 0 0 10px #ffc107; /* Add a glow effect */
 }
 
@@ -34,7 +34,7 @@ main {
     border-radius: 25px;
     border-style: solid;
     border-width: 2px; /* Thinner outline */
-    border-color: #ffc107; /* Blue glowy outline */
+    border-color: #ffc107; /* Yellowy glowy outline */
     box-shadow: 0 0 10px #ffc107; /* Add a glow effect */
     margin-left: auto;
     margin-right: auto;
