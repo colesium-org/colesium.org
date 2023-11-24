@@ -162,6 +162,59 @@
         </section>
 			</main>
 	</div>	
+				 <style>
+    .music-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #7c8383;
+  	border: 2px solid cyan;
+      border-radius: 20px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+    }
+
+    .music-container audio {
+      width: 200px;
+      margin: 0 10px;
+    }
+
+    .funny-button {
+      font-family: 'Comic Sans MS', cursive;
+      font-size: 18px;
+      padding: 5px 10px;
+      background-color: #7c8383;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="music-container">
+    <audio src="assets/music.mp3" id="music-player" loop></audio>
+    <button onclick="toggleMusic()" id="music-toggle" class="funny-button">Make Some Noise!</button>
+  </div>
+
+  <script>
+    var musicPlayer = document.getElementById('music-player');
+    var musicToggle = document.getElementById('music-toggle');
+
+    function toggleMusic() {
+      if (musicPlayer.paused) {
+        musicPlayer.play();
+        musicToggle.textContent = 'grrr';
+      } else {
+        musicPlayer.pause();
+        musicToggle.textContent = 'hehehehaw';
+      }
+    }
+  </script>
+</body>
 	<script src="background.js"></script>	
 	<script>
 		bgzy.init([
